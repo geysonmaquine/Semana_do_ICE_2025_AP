@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+$font-family-sans-serif: 'Roboto Slab', sans-serif !default;
+$presentation-heading-font: 'Roboto Slab', sans-serif !default;
+$presentation-block-margin: 10px !default;
+$presentation-slide-text-align: justify !default;
+$presentation-font-size-root: 27px !default;
+/*-- scss:rules --*/
+
+.reveal .slide-number {
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+
+.reveal .evento{
+  position: absolute;
+   bottom: 5.5em;
+   left:   100px;
+   height: 200px;
+   width: 2000px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-image: url("topo_ice_2025.png");
+}
+.reveal .universidade{
+  position: absolute;
+   bottom: 5.5em;
+   left:   30px;
+   height: 200px;
+   width: 205px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-image: url("ufam.jpg");
+}
+
+.reveal .programa{
+  position: absolute;
+  bottom: 5.5em;
+  right:   30px;
+  height: 190px;
+  width: 210px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("ppgfis.png");
+}
+
+
+.reveal .capes{
+  position: absolute;
+   top: 6em;
+   left:   12em;
+   height: 150px;
+   width: 500px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-image: url("apoio.png");
+}
+
+
+h3{
+    color: #be8a38 !important;
+  }
+  .quarto-title-affiliation {
+    font-size: 27px !important;
+    position: relative;
+    bottom: 6em;
+  
+}
+.reveal .subtitle{
+  position: relative;
+  top: 10em;
+}
+.quarto-title-author-name {
+  position: relative;
+  top: 16em;
+
+}
+
+.reveal .title {
+  font-size: 50px !important;
+  color: #FAFAFA;
+  border-radius: 25px;
+  border: 20px solid #be8a38;
+  background-color: #be8a38;
+  position: relative;
+  top: 8em;
+}
+figcaption{
+  text-align: center !important;
+
+}
+section.slide h2 {
+    font-size: 40px !important;
+    color:#FAFAFA !important;
+    border: 20px solid #be8a38; /* Define a espessura, o estilo e a cor da borda */
+    background-color: #be8a38;
+
+  
+
+    
+  }
+
+
+  .reveal .progress {
+    background: rgba(0, 0, 0, 0.2);
+    color: #be8a38;
+  }
+
+
+
+
+ .reveal .slide-number {
+  color: #23373B;
+}
+
+
+
+h4{
+  margin-left:30px !important;
+
+}
+h3
+{
+  margin-left:30px !important;
+
+}
+
+li{
+  margin-left:30px !important;
+
+}
+
+
+p{
+  margin-left:30px !important;
+  margin-right: 30px !important;
+
+}
+

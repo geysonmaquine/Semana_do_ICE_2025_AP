@@ -1,0 +1,52 @@
+---
+title: Transporte Quântico em Redes Hexagonais []{.capes} []{.evento}
+institute:
+    - 
+    - 
+    - 
+author:
+    - "Geyson Maquiné Batalha <br> <br>  Dr. Mircea Daniel Galiceanu"
+    
+bibliography: ref.bib
+format: 
+    revealjs:
+        slide-number: c/t
+        theme: [tema.scss]
+        width: 1600
+        height: 900
+        fig-cap-location: top
+        code-fold: true
+        margin: 0
+        pointer:
+            pointerSize: 20
+            color: '#be8a38'
+revealjs-plugins:
+    - pointer
+---
+
+
+
+## Roteiro
+
+- Motivação
+- Grafos e Matriz Laplaciana
+- Rede Multicamada DSGRSD
+- Espectro de Autovalores
+- Medidas de Probabilidade
+- Procedimentos
+- Resultados Parciais 
+- Considerações Finais
+
+
+
+{{< include _motivacao.qmd >}}
+
+
+
+
+---
+
+## Referências
+
+::: {#refs style="margin:25px !important;"}
+:::
