@@ -26,20 +26,15 @@ revealjs-plugins:
 
 
 
-## Roteiro
 
-- Motivação
-- Grafos e Matriz Laplaciana
-- Rede Multicamada DSGRSD
-- Espectro de Autovalores
-- Medidas de Probabilidade
-- Procedimentos
-- Resultados Parciais 
-- Considerações Finais
 
 
 
 {{< include _motivacao.qmd >}}
+{{< include _metodologia.qmd >}}
+{{< include _resultados.qmd >}}
+{{< include _conclusoes.qmd >}}
+
 
 
 
