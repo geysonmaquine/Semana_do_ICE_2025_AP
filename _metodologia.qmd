@@ -1,0 +1,23 @@
+## Metodologia 
+
+### Medidas de Probabilidade
+
+:::: {.columns}
+
+::: {.column style="font-size:23px; width=50%"}
+- Probabilidade Média de Retorno
+    + Clássico
+$$\bar{p}(t)= \dfrac{1}{N}\sum_{n=1}^Ne^{- \lambda_n t}$$
+
+    + Quântico
+$$\; \bar{\pi}(t)=\frac{1}{N}\left|\sum_{n=1}^Ne^{-j\lambda_n t}\langle i|w_n\rangle\langle w_n|i\rangle\right|^2$$
+
+:::
+
+
+::: {.column style="font-size:23px; width=50%"}
+
+s
+:::
+
+::::
