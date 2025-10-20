@@ -1,5 +1,52 @@
 ## Metodologia 
 
+###  Diagramas de Schlegel
+
+![ Representação dos  sólidos Platônicos (parte superior) e seus respectivos diagramas de Schlegel (parte inferior).](img/poliedros.svg){height=300px  fig-align="center"}
+
+
+- Fórmula de Euler para poliedros 
+$$V-E+F=2$$
+- Fulereno $C_n$
+$$P=12, \quad H=\dfrac{n}{2}-10$$
+    + $C_{60}$:  12 pentágonos e 20 hexágonos; $C_{70}$: 12 pentágonos e 25 hexágonos.
+
+
+
+## Metodologia 
+
+### Fulerenos
+
+:::: {.columns}
+::: {.column  style="text-align:center; font-size:25px;"}
+ ![ Diagrama de Schlegel do Fulereno $C_{60}$.](img/C60.svg){height=550px  fig-align="center"}
+
+ Fonte: Adaptado de @Silantev2017.
+:::
+::: {.column  style="text-align:center; font-size:25px;"}
+ ![ Diagrama de Schlegel do Fulereno $C_{70}$.](img/C70.svg){height=550px  fig-align="center"}
+
+ Fonte: Adaptado de @Silant.
+:::
+::::
+
+## Metodologia 
+
+### Folhas de grafeno
+
+:::: {.columns}
+
+::: {.column style="font-size:23px; text-align=left !important"}
+![Representação das folhas de grafeno enumeradas, no qual à esquerda tem-se uma rede com dimensão $(H_x, H_y)=(17,1)$ na parte superior e na região inferior a estrutura com  $(H_x,H_y)=(8,3)$. Ao lado direito, é apresentado a folha de grafeno de tamanho $(H_x,H_y)=(5,5)$.](img/grafo_meto.svg){#fig-folhagrafeno height=550px  fig-align="center" }
+
+:::
+::: {.column style="font-size:23px;"}
+s
+:::
+::::
+
+## Metodologia 
+
 ### Medidas de Probabilidade
 
 :::: {.columns}

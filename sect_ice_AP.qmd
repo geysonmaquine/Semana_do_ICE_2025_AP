@@ -22,6 +22,9 @@ format:
             color: '#be8a38'
 revealjs-plugins:
     - pointer
+crossref:
+  fig-title: Figura
+
 ---
 
 
