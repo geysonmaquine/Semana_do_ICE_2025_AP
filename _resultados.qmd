@@ -1,0 +1,50 @@
+## Resultados
+
+### Probabilidade Média de Retorno e Eficiência
+
+![ Gráficos das probabilidades médias de retorno (a) clássico, (b) quântico e (c) valor médio ao longo do tempo.](img/prob_eficiencia.svg){#fig-C60 height=700px  fig-align="center"}
+
+
+
+## Resultados
+
+### Variando $H_x$ e $H_y$
+
+![Grafos estrela (parte superior) e triangular (parte inferior) com $N=3$.](img/fig4_3.svg){#fig-grafos height=300px fig-align="center"}
+
+:::: {.columns}
+::: {.column  style="font-size:25px;"}
+
+- Eficientes
+    + (1,$H_y$) predominantemente *Armchair*
+    + (i)
+:::
+
+
+::: {.column  style="font-size:25px;"}
+
+- Ineficiente 
+
+
+
+:::
+::::
+
+## Resultados
+
+### Probabilidade de Transição Quântica
+
+::: {#fig-graficostransicao layout-ncol=5}
+
+![Fulereno $C_{60}$](/img/fig2_5.svg){#fig-graficoc60}
+
+![Fulereno $C_{70}$](/img/fig2_6.svg){#fig-graficoc70}
+
+![Grafeno (17,1) ](/img/fig3_7.svg){#fig-grafeno_hx17}
+
+![Grafeno (8,3)](/img/fig3_8.svg){#fig-grafeno_hx8}
+
+![Grafeno (5,5)](/img/fig3_9.svg){#fig-grafeno_hx5}
+
+Gráficos de contorno da probabilidade de transição $\pi_{k,j} (10)$.
+:::

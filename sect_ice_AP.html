@@ -174,11 +174,56 @@ Geyson Maquiné Batalha <br> <br> Dr.&nbsp;Mircea Daniel Galiceanu
 </section>
 <section id="metodologia" class="slide level2">
 <h2>Metodologia</h2>
+<h3 id="grafos-e-matriz-laplaciana">Grafos e Matriz Laplaciana</h3>
+<div class="columns">
+<div class="column" style="font-size:25px;">
+<div id="fig-grafos" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-grafos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Grafos estrela (parte superior) e triangular (parte inferior) com <span class="math inline">\(N=3\)</span>.
+</figcaption>
+<div aria-describedby="fig-grafos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="img/grafo.svg" class="quarto-figure quarto-figure-center" height="400">
+</div>
+</figure>
+</div>
+<ul>
+<li>Elementos da Matriz Laplaciana <span class="math inline">\(\mathbf{L}\)</span></li>
+</ul>
+<p><span class="math display">\[\small L_{ij} =\begin{cases}
+        \;\;k_i, &amp; i=j, \\
+        -1,&amp;\text{se } i \neq j \text{ e ocorrer ligação entre os vértices } i \text{ e } j ,\\
+        \;\;\;0,&amp; \text{caso contrário}.\end{cases}\]</span></p>
+<p>Obs.: também pode ser chamada de Matriz Conectividade <span class="math inline">\(\mathbf{A}\)</span>.</p>
+</div><div class="column">
+<ul>
+<li>Grafo Estrela</li>
+</ul>
+<p><span class="math display">\[\mathbf{L}=\begin{pmatrix}1&amp;-1&amp;0&amp;0\\
+-1&amp;3&amp;-1&amp;-1\\
+0&amp;-1&amp;1&amp;0\\
+0&amp;-1&amp;0&amp;1\\\end{pmatrix}\]</span></p>
+<ul>
+<li><p>Espectro de autovalores</p>
+<p><span class="math display">\[L_{ij}\mathbf{w}_i=\lambda_i\mathbf{w}_i\]</span></p>
+<ul>
+<li><p><span class="math inline">\(\lambda_i \in \mathbb{R}\)</span> e segue a ordem <span class="math inline">\(0=\lambda_1\leq\lambda_2\leq \dots\leq \lambda_{N}\)</span></p></li>
+<li><p><span class="math inline">\(\mathbf{w}_i\)</span> é ortonormal</p></li>
+</ul></li>
+</ul>
+</div></div>
+</section>
+<section id="metodologia-1" class="slide level2">
+<h2>Metodologia</h2>
 <h3 id="diagramas-de-schlegel">Diagramas de Schlegel</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<figcaption>Representação dos sólidos Platônicos (parte superior) e seus respectivos diagramas de Schlegel (parte inferior).</figcaption>
-<p><img data-src="img/poliedros.svg" height="300"></p>
+<div id="fig-poliedros" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-poliedros-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2: Representação dos sólidos Platônicos (parte superior) e seus respectivos diagramas de Schlegel (parte inferior).
+</figcaption>
+<div aria-describedby="fig-poliedros-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="img/poliedros.svg" class="quarto-figure quarto-figure-center" height="300">
+</div>
 </figure>
 </div>
 <ul>
@@ -189,29 +234,37 @@ Geyson Maquiné Batalha <br> <br> Dr.&nbsp;Mircea Daniel Galiceanu
 </ul></li>
 </ul>
 </section>
-<section id="metodologia-1" class="slide level2">
+<section id="metodologia-2" class="slide level2">
 <h2>Metodologia</h2>
 <h3 id="fulerenos">Fulerenos</h3>
 <div class="columns">
 <div class="column" style="text-align:center; font-size:25px;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<figcaption>Diagrama de Schlegel do Fulereno <span class="math inline">\(C_{60}\)</span>.</figcaption>
-<p><img data-src="img/C60.svg" height="550"></p>
+<div id="fig-C60" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-C60-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3: Diagrama de Schlegel do Fulereno <span class="math inline">\(C_{60}\)</span>.
+</figcaption>
+<div aria-describedby="fig-C60-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="img/C60.svg" class="quarto-figure quarto-figure-center" height="550">
+</div>
 </figure>
 </div>
 <p>Fonte: Adaptado de <span class="citation" data-cites="Silantev2017">Silant’ev (<a href="#/referências" role="doc-biblioref" onclick="">2017a</a>)</span>.</p>
 </div><div class="column" style="text-align:center; font-size:25px;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<figcaption>Diagrama de Schlegel do Fulereno <span class="math inline">\(C_{70}\)</span>.</figcaption>
-<p><img data-src="img/C70.svg" height="550"></p>
+<div id="fig-c70" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-c70-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4: Diagrama de Schlegel do Fulereno <span class="math inline">\(C_{70}\)</span>.
+</figcaption>
+<div aria-describedby="fig-c70-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="img/C70.svg" class="quarto-figure quarto-figure-center" height="550">
+</div>
 </figure>
 </div>
 <p>Fonte: Adaptado de <span class="citation" data-cites="Silant">Silant’ev (<a href="#/referências" role="doc-biblioref" onclick="">2017b</a>)</span>.</p>
 </div></div>
 </section>
-<section id="metodologia-2" class="slide level2">
+<section id="metodologia-3" class="slide level2">
 <h2>Metodologia</h2>
 <h3 id="folhas-de-grafeno">Folhas de grafeno</h3>
 <div class="columns">
@@ -219,7 +272,7 @@ Geyson Maquiné Batalha <br> <br> Dr.&nbsp;Mircea Daniel Galiceanu
 <div id="fig-folhagrafeno" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-folhagrafeno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;1: Representação das folhas de grafeno enumeradas, no qual à esquerda tem-se uma rede com dimensão <span class="math inline">\((H_x, H_y)=(17,1)\)</span> na parte superior e na região inferior a estrutura com <span class="math inline">\((H_x,H_y)=(8,3)\)</span>. Ao lado direito, é apresentado a folha de grafeno de tamanho <span class="math inline">\((H_x,H_y)=(5,5)\)</span>.
+Figura&nbsp;5: Representação das folhas de grafeno enumeradas, no qual à esquerda tem-se uma rede com dimensão <span class="math inline">\((H_x, H_y)=(17,1)\)</span> na parte superior e na região inferior a estrutura com <span class="math inline">\((H_x,H_y)=(8,3)\)</span>. Ao lado direito, é apresentado a folha de grafeno de tamanho <span class="math inline">\((H_x,H_y)=(5,5)\)</span>.
 </figcaption>
 <div aria-describedby="fig-folhagrafeno-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img data-src="img/grafo_meto.svg" class="quarto-figure quarto-figure-center" height="550">
@@ -227,10 +280,21 @@ Figura&nbsp;1: Representação das folhas de grafeno enumeradas, no qual à esqu
 </figure>
 </div>
 </div><div class="column" style="font-size:23px;">
-<p>s</p>
+<ul>
+<li>Primeira e última linha</li>
+</ul>
+<p><span class="math display">\[2H_x+1\]</span></p>
+<ul>
+<li>Linhas interiores <span class="math inline">\((H_y&gt;1)\)</span></li>
+</ul>
+<p><span class="math display">\[2H_x+2\]</span></p>
+<ul>
+<li>Total de vértices e arestas</li>
+</ul>
+<p><span class="math display">\[N_G=2(H_x+H_y+H_xH_y)\]</span> <span class="math display">\[E_G=N_G+H_xH_y-1\]</span></p>
 </div></div>
 </section>
-<section id="metodologia-3" class="slide level2">
+<section id="metodologia-4" class="slide level2">
 <h2>Metodologia</h2>
 <h3 id="medidas-de-probabilidade">Medidas de Probabilidade</h3>
 <div class="columns">
@@ -239,11 +303,11 @@ Figura&nbsp;1: Representação das folhas de grafeno enumeradas, no qual à esqu
 <li>Probabilidade Média de Retorno
 <ul>
 <li><p>Clássico <span class="math display">\[\bar{p}(t)= \dfrac{1}{N}\sum_{n=1}^Ne^{- \lambda_n t}\]</span></p></li>
-<li><p>Quântico <span class="math display">\[\; \bar{\pi}(t)=\frac{1}{N}\left|\sum_{n=1}^Ne^{-j\lambda_n t}\langle i|w_n\rangle\langle w_n|i\rangle\right|^2\]</span></p></li>
+<li><p>Quântico <span class="math display">\[\; \bar{\pi}(t)=\frac{1}{N}\left|\sum_{n=1}^Ne^{-i\lambda_n t}\langle j|w_n\rangle\langle w_n|j\rangle\right|^2\]</span></p></li>
 </ul></li>
 <li>Probabilidade de Transição Quântica</li>
 </ul>
-<p><span class="math display">\[\pi_{k,i}(t)=\left|\sum_{n=1}^Ne^{-j\lambda_n t}\langle k|w_n\rangle\langle w_n|i\rangle\right|^2\]</span></p>
+<p><span class="math display">\[\pi_{k,j}(t)=\left|\sum_{n=1}^Ne^{-i\lambda_n t}\langle k|w_n\rangle\langle w_n|j\rangle\right|^2\]</span></p>
 </div><div class="column" style="font-size:23px; width=50%">
 <ul>
 <li>No limite ao longo do tempo</li>
@@ -252,9 +316,125 @@ Figura&nbsp;1: Representação das folhas de grafeno enumeradas, no qual à esqu
 <ul>
 <li>Valor Médio ao longo do tempo</li>
 </ul>
-<p><span class="math display">\[\scriptsize\chi\equiv\dfrac{1}{N^2}\sum_{n=1}^N\sum_{m=1}^N\delta_{\lambda_n,\lambda_m}\leq\dfrac{1}{N}\sum_{i=1}^N\left[\sum_{n=1}^N\sum_{m=1}^N\delta_{\lambda_n,\lambda_m}|\langle w_n|i\rangle|^2|\langle w_m|i\rangle|^2\right]\equiv\bar{\chi}\]</span></p>
+<p><span class="math display">\[\scriptsize\chi\equiv\dfrac{1}{N^2}\sum_{n=1}^N\sum_{m=1}^N\delta_{\lambda_n,\lambda_m}\leq\dfrac{1}{N}\sum_{j=1}^N\left[\sum_{n=1}^N\sum_{m=1}^N\delta_{\lambda_n,\lambda_m}|\langle w_n|j\rangle|^2|\langle w_m|j\rangle|^2\right]\equiv\bar{\chi}\]</span></p>
 <p><span class="math display">\[\begin{aligned}\blacktriangleright\;\chi,\bar{\chi }=0\rightarrow\text{ O tranporte é eficiente} \;\;\\ \blacktriangleright\;\chi,\bar{\chi }=1\rightarrow\text{O tranporte é  ineficiente}\end{aligned}\]</span></p>
 </div></div>
+</section>
+<section id="resultados" class="slide level2">
+<h2>Resultados</h2>
+<h3 id="probabilidade-média-de-retorno-e-eficiência">Probabilidade Média de Retorno e Eficiência</h3>
+<div id="fig-C60" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-C60-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6: Gráficos das probabilidades médias de retorno (a) clássico, (b) quântico e (c) valor médio ao longo do tempo.
+</figcaption>
+<div aria-describedby="fig-C60-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="img/prob_eficiencia.svg" class="quarto-figure quarto-figure-center" height="700">
+</div>
+</figure>
+</div>
+</section>
+<section id="resultados-1" class="slide level2">
+<h2>Resultados</h2>
+<h3 id="variando-h_x-e-h_y">Variando <span class="math inline">\(H_x\)</span> e <span class="math inline">\(H_y\)</span></h3>
+<div id="fig-grafos" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-grafos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;7: Grafos estrela (parte superior) e triangular (parte inferior) com <span class="math inline">\(N=3\)</span>.
+</figcaption>
+<div aria-describedby="fig-grafos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="img/fig4_3.svg" class="quarto-figure quarto-figure-center" height="300">
+</div>
+</figure>
+</div>
+<div class="columns">
+<div class="column" style="font-size:25px;">
+<ul>
+<li>Eficiente
+<ul>
+<li>(1,<span class="math inline">\(H_y\)</span>) predominantemente <em>Armchair</em></li>
+</ul></li>
+</ul>
+</div><div class="column" style="font-size:25px;">
+<ul>
+<li>Ineficiente</li>
+</ul>
+</div></div>
+</section>
+<section id="resultados-2" class="slide level2">
+<h2>Resultados</h2>
+<h3 id="probabilidade-de-transição-quântica">Probabilidade de Transição Quântica</h3>
+<div id="fig-graficostransicao" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-graficostransicao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;8: Gráficos de contorno da probabilidade de transição <span class="math inline">\(\pi_{k,j} (10)\)</span>.
+</figcaption>
+<div aria-describedby="fig-graficostransicao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-graficostransicao" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-graficoc60" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-subfloat-fig">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-graficoc60-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Fulereno <span class="math inline">\(C_{60}\)</span>
+</figcaption>
+<div aria-describedby="fig-graficoc60-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="./img/fig2_5.svg" data-ref-parent="fig-graficostransicao">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-graficostransicao" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-graficoc70" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-subfloat-fig">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-graficoc70-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Fulereno <span class="math inline">\(C_{70}\)</span>
+</figcaption>
+<div aria-describedby="fig-graficoc70-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="./img/fig2_6.svg" data-ref-parent="fig-graficostransicao">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-graficostransicao" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-grafeno_hx17" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-subfloat-fig">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-grafeno_hx17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) Grafeno (17,1)
+</figcaption>
+<div aria-describedby="fig-grafeno_hx17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="./img/fig3_7.svg" data-ref-parent="fig-graficostransicao">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-graficostransicao" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-grafeno_hx8" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-subfloat-fig">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-grafeno_hx8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(d) Grafeno (8,3)
+</figcaption>
+<div aria-describedby="fig-grafeno_hx8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="./img/fig3_8.svg" data-ref-parent="fig-graficostransicao">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-graficostransicao" style="flex-basis: 20.0%;justify-content: flex-start;">
+<div id="fig-grafeno_hx5" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-subfloat-fig">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-grafeno_hx5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(e) Grafeno (5,5)
+</figcaption>
+<div aria-describedby="fig-grafeno_hx5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="./img/fig3_9.svg" data-ref-parent="fig-graficostransicao">
+</div>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</figure>
+</div>
 </section>
 <section id="referências" class="slide level2 smaller scrollable">
 <h2>Referências</h2>
