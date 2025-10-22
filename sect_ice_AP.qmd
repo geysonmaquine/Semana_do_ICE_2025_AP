@@ -40,11 +40,13 @@ crossref:
 
 
 
-
-
+---
+nocite: |
+  @batalha2022quantum,@Haijing
 ---
 
 ## Referências
+
 
 ::: {#refs style="margin:25px !important;"}
 :::

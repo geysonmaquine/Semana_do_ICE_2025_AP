@@ -1,0 +1,15 @@
+## Conclusões
+
+
+A eficiência do transporte quântico está ligada  à simetria da rede.
+
+### Fulereno
+- $C_{70}$ é eficiente e tem menor degenerecência.
+- $C_{70}$ é ineficiente  e tem maior degenerecência.
+
+
+### Grafeno
+- Estruturas mais linerares  com $H_x>>H_y$ o caminhante se propaga mais rapidamente.
+- Estruturas quadradas ($H_x=H_y$) transporte é inificiente
+- Número de faces ímpar em uma direção ($H_x$ ou $H_y$) ou em duas $H_x=H_y(H_x>7)$ piora o transporte. 
+

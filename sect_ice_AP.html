@@ -170,7 +170,51 @@ Geyson Maquiné Batalha <br> <br> Dr.&nbsp;Mircea Daniel Galiceanu
 </section>
 <section id="introdução" class="slide level2">
 <h2>Introdução</h2>
-<h3 id="motivação">Motivação</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/inicio.svg" class="quarto-figure quarto-figure-center" height="750"></p>
+</figure>
+</div>
+</section>
+<section id="introdução-1" class="slide level2">
+<h2>Introdução</h2>
+<h3 id="modelo-de-caminhadas">Modelo de Caminhadas</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/caminhadas.svg" class="quarto-figure quarto-figure-center" height="450"></p>
+</figure>
+</div>
+<h4 id="caminhadas-quânticas">Caminhadas Quânticas</h4>
+<div class="columns">
+<div class="column">
+<ul>
+<li>Tempo Discreto
+<ul>
+<li><span class="citation" data-cites="Aharonov_1993">Aharonov, Davidovich, and Zagury (<a href="#/referências" role="doc-biblioref" onclick="">1993</a>)</span></li>
+<li>Espaço moeda e Espaço posição</li>
+</ul></li>
+</ul>
+</div><div class="column">
+<ul>
+<li>Tempo Contínuo
+<ul>
+<li><span class="citation" data-cites="Farhi_1998">Farhi and Gutmann (<a href="#/referências" role="doc-biblioref" onclick="">1998</a>)</span></li>
+<li><span class="math inline">\(U(t)=e^{-i\mathbf{H}t}\)</span></li>
+</ul></li>
+</ul>
+</div></div>
+</section>
+<section id="introdução-2" class="slide level2">
+<h2>Introdução</h2>
+<h3 id="objetivo">Objetivo</h3>
+<ul>
+<li>Avaliar a eficiência do transporte quântico nas redes de grafeno e fulereno.
+<ul>
+<li>Determinar as probabilidades médias de retorno clássico e quântico.</li>
+<li>Deterninar a probabiladade de transição quântica e o valor médio ao longo do tempo.</li>
+<li>Identificar as estruturas que possuem o melhor e pior eficiência do transporte.</li>
+</ul></li>
+</ul>
 </section>
 <section id="metodologia" class="slide level2">
 <h2>Metodologia</h2>
@@ -340,7 +384,7 @@ Figura&nbsp;6: Gráficos das probabilidades médias de retorno (a) clássico, (b
 <div id="fig-grafos" class="quarto-float quarto-figure quarto-figure-center" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-grafos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;7: Grafos estrela (parte superior) e triangular (parte inferior) com <span class="math inline">\(N=3\)</span>.
+Figura&nbsp;7: Gráfico de contorno do valor médio ao longo do tempo em função dos parâmetros (<span class="math inline">\(H_x,H_y\)</span>).
 </figcaption>
 <div aria-describedby="fig-grafos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img data-src="img/fig4_3.svg" class="quarto-figure quarto-figure-center" height="300">
@@ -350,14 +394,20 @@ Figura&nbsp;7: Grafos estrela (parte superior) e triangular (parte inferior) com
 <div class="columns">
 <div class="column" style="font-size:25px;">
 <ul>
-<li>Eficiente
+<li>Eficientes
 <ul>
-<li>(1,<span class="math inline">\(H_y\)</span>) predominantemente <em>Armchair</em></li>
+<li>(1,<span class="math inline">\(H_y\)</span>) predominantemente <em>Armchair</em>.</li>
+<li>(<span class="math inline">\(H_x\)</span>,i) para <span class="math inline">\(i&gt;1\)</span> fixo.</li>
 </ul></li>
 </ul>
 </div><div class="column" style="font-size:25px;">
 <ul>
-<li>Ineficiente</li>
+<li><p>Ineficiente</p>
+<ul>
+<li><span class="math inline">\(H_x=H_y\)</span> para valores ímpares <span class="math inline">\(H_x(H_x&gt;7)\)</span>.</li>
+<li>(<span class="math inline">\(H_x,H_y=2H_x+1\)</span>).</li>
+<li>(<span class="math inline">\(H_x=2H_x+1,H_y\)</span>).</li>
+</ul></li>
 </ul>
 </div></div>
 </section>
@@ -435,10 +485,74 @@ Figura&nbsp;8: Gráficos de contorno da probabilidade de transição <span class
 </div>
 </figure>
 </div>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Análise</a></li><li><a href="#tabset-1-2">Fulereno</a></li><li><a href="#tabset-1-3">Grafeno</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="columns">
+<div class="column" style="font-size:25px;">
+<ul>
+<li>Fulereno <span class="math inline">\(C_{60}\)</span>
+<ul>
+<li>Probabilidade alta em nós diametralmente opostos 2 e 55: <span class="math inline">\(2\rightarrow 1 \rightarrow 6 \rightarrow 7\rightarrow  21 \rightarrow 22 \rightarrow 39 \rightarrow 40 \rightarrow 54\rightarrow 55\)</span></li>
+</ul></li>
+<li>Fulereno <span class="math inline">\(C_{70}\)</span>
+<ul>
+<li>Probabilidade alta em <span class="math inline">\(2\rightarrow 12\rightarrow 13\rightarrow 30\rightarrow 31\rightarrow 50\rightarrow 51\rightarrow 65\rightarrow 66\)</span></li>
+<li>Centros de difusão quântica em nós: 23,24,27,28,31,32,35,36,39,40</li>
+</ul></li>
+</ul>
+</div><div class="column" style="font-size:25px;">
+
+</div></div>
+</div>
+<div id="tabset-1-2">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/fulerenos.jpg" class="quarto-figure quarto-figure-center" height="300"></p>
+</figure>
+</div>
+</div>
+<div id="tabset-1-3">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/grafenos.jpg" class="quarto-figure quarto-figure-center" height="300"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="conclusões" class="slide level2">
+<h2>Conclusões</h2>
+<p>A eficiência do transporte quântico está ligada à simetria da rede.</p>
+<h3 id="fulereno-1">Fulereno</h3>
+<ul>
+<li><span class="math inline">\(C_{70}\)</span> é eficiente e tem menor degenerecência.</li>
+<li><span class="math inline">\(C_{70}\)</span> é ineficiente e tem maior degenerecência.</li>
+</ul>
+<h3 id="grafeno-1">Grafeno</h3>
+<ul>
+<li>Estruturas mais linerares com <span class="math inline">\(H_x&gt;&gt;H_y\)</span> o caminhante se propaga mais rapidamente.</li>
+<li>Estruturas quadradas (<span class="math inline">\(H_x=H_y\)</span>) transporte é inificiente</li>
+<li>Número de faces ímpar em uma direção (<span class="math inline">\(H_x\)</span> ou <span class="math inline">\(H_y\)</span>) ou em duas <span class="math inline">\(H_x=H_y(H_x&gt;7)\)</span> piora o transporte.</li>
+</ul>
 </section>
 <section id="referências" class="slide level2 smaller scrollable">
 <h2>Referências</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" style="margin:25px !important;" data-entry-spacing="0" role="list">
+<div id="ref-Aharonov_1993" class="csl-entry" role="listitem">
+Aharonov, Y., L. Davidovich, and N. Zagury. 1993. <span>“Quantum Random Walks.”</span> <em>Physical Review A</em> 48 (2): 1687–90. <a href="https://doi.org/10.1103/physreva.48.1687">https://doi.org/10.1103/physreva.48.1687</a>.
+</div>
+<div id="ref-batalha2022quantum" class="csl-entry" role="listitem">
+Batalha, Geyson Maquiné, A. Volta, Walter T. Strunz, and Mircea Galiceanu. 2022. <span>“Quantum Transport on Honeycomb Networks.”</span> <em>Scientific Reports</em> 12 (1). https://doi.org/<a href="https://doi.org/10.1038/s41598-022-10537-w">https://doi.org/10.1038/s41598-022-10537-w</a>.
+</div>
+<div id="ref-Farhi_1998" class="csl-entry" role="listitem">
+Farhi, Edward, and Sam Gutmann. 1998. <span>“Quantum Computation and Decision Trees.”</span> <em>Physical Review A</em> 58 (2): 915–28. <a href="https://doi.org/10.1103/physreva.58.915">https://doi.org/10.1103/physreva.58.915</a>.
+</div>
+<div id="ref-Haijing" class="csl-entry" role="listitem">
+Qiang, Xiaogang, Shixin Ma, and Haijing Song. 2024. <span>“Quantum Walk Computing: Theory, Implementation, and Application.”</span> <em>Intelligent Computing</em> 3: 0097. <a href="https://doi.org/10.34133/icomputing.0097">https://doi.org/10.34133/icomputing.0097</a>.
+</div>
 <div id="ref-Silantev2017" class="csl-entry" role="listitem">
 Silant’ev, A. V. 2017a. <span>“Energy Spectrum and Optical Properties of <span><span class="math inline">\(C_{60}\)</span></span> Fullerene Within the Hubbard Model.”</span> <em>Physics of Metals and Metallography</em> 118 (1): 1–9. <a href="https://doi.org/10.1134/s0031918x16100112">https://doi.org/10.1134/s0031918x16100112</a>.
 </div>

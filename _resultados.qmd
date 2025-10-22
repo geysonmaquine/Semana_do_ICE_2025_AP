@@ -10,14 +10,14 @@
 
 ### Variando $H_x$ e $H_y$
 
-![Grafos estrela (parte superior) e triangular (parte inferior) com $N=3$.](img/fig4_3.svg){#fig-grafos height=300px fig-align="center"}
+![Gráfico de contorno do valor médio ao longo do tempo em função dos parâmetros ($H_x,H_y$).](img/fig4_3.svg){#fig-grafos height=300px fig-align="center"}
 
 :::: {.columns}
 ::: {.column  style="font-size:25px;"}
 
 - Eficientes
-    + (1,$H_y$) predominantemente *Armchair*
-    + (i)
+    + (1,$H_y$) predominantemente *Armchair*.
+    + ($H_x$,i) para $i>1$ fixo.
 :::
 
 
@@ -25,7 +25,9 @@
 
 - Ineficiente 
 
-
+    + $H_x=H_y$ para valores ímpares $H_x(H_x>7)$.
+    + ($H_x,H_y=2H_x+1$).
+    + ($H_x=2H_x+1,H_y$).
 
 :::
 ::::
@@ -47,4 +49,35 @@
 ![Grafeno (5,5)](/img/fig3_9.svg){#fig-grafeno_hx5}
 
 Gráficos de contorno da probabilidade de transição $\pi_{k,j} (10)$.
+:::
+
+
+
+:::{.panel-tabset}
+
+### Análise
+
+:::: {.columns}
+::: {.column  style="font-size:25px;"}
+- Fulereno $C_{60}$
+    + Probabilidade alta em nós diametralmente opostos 2 e 55: $2\rightarrow 1 \rightarrow 6 \rightarrow 7\rightarrow  21 \rightarrow 22 \rightarrow 39 \rightarrow 40 \rightarrow 54\rightarrow 55$
+
+- Fulereno $C_{70}$
+    + Probabilidade alta em $2\rightarrow 12\rightarrow 13\rightarrow 30\rightarrow 31\rightarrow 50\rightarrow 51\rightarrow 65\rightarrow 66$
+    + Centros de difusão quântica em nós: 23,24,27,28,31,32,35,36,39,40
+
+:::
+::: {.column  style="font-size:25px;"}
+:::
+::::
+### Fulereno
+
+![](img/fulerenos.jpg){ height=300px fig-align="center"}
+
+
+
+### Grafeno
+
+![](img/grafenos.jpg){ height=300px fig-align="center"}
+
 :::
